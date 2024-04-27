@@ -1,0 +1,55 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Button from "../../components/Button";
+
+const Passenger = () => {
+  return (
+    <div className="bg-white rounded-lg shadow-md">
+      <h1 className="block w-full bg-gray-100 px-3 py-2 shadow mb-2 font-bold">
+        Passenger Management
+      </h1>
+      <div className="px-3 py-2" id="printableArea">
+        <table className="text-sm text-left md:text-md border-collapse table-auto w-full">
+          <thead>
+            <tr>
+              <th className="py-3 text-white bg-green-500">S/N</th>
+              <th className="py-3 text-white bg-green-500">Name</th>
+              <th className="py-3 text-white bg-green-500">status</th>
+              <th className="py-3 text-white bg-green-500">Start point</th>
+              <th className="py-3 text-white bg-green-500">End point</th>
+              <th className="py-3 text-white bg-green-500">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="py-3">1</td>
+              <td className="py-3">John Doe</td>
+              <td className="py-3">online</td>
+              <td className="py-3">New york</td>
+              <td className="py-3">old york</td>
+              <td className="py-3 space-x-2">
+                <Button className="font-bold text-sm text-white px-3 py-2 rounded bg-red-500 hover:bg-red-800">
+                  View
+                </Button>
+              </td>
+            </tr>
+            <tr>
+              <td className="py-3">2</td>
+              <td className="py-3">Dave Cole</td>
+              <td className="py-3">offline</td>
+              <td className="py-3">lagos</td>
+              <td className="py-3">lag</td>
+              <td className="py-3 space-x-2">
+                <Button className="font-bold text-sm text-white px-3 py-2 rounded bg-red-500 hover:bg-red-800">
+                  View
+                </Button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Passenger;
